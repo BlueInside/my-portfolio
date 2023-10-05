@@ -25,11 +25,11 @@ body {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-  box-shadow: 7px 9px 19px #454343;
 }
 
 .white-text {
   color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .about-me {
@@ -59,7 +59,6 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
-
 /* COLOR PALLETTE
 Primary Color: #007BFF (Shades of blue often evoke trust and professionalism.)
 
