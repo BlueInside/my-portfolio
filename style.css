@@ -49,20 +49,45 @@ body {
   justify-content: space-around;
   margin: 4rem 1rem;
 }
-.icon {
+.view-in-new-icon {
+  background-image: url('./icons/view-in-new.svg');
+}
+.github-icon {
+  background-image: url('./icons/github-original.svg');
+}
+
+.icon-small {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  transition: transform 0.5s linear;
+}
+
+.icon-large {
   font-size: 6rem;
   height: 6rem;
   transition: transform 0.5s linear;
 }
 
-.icon:hover {
+.icon-large:hover,
+.icon-small:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-.projects-container {display: grid;grid-template-rows: 40rem;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));background-color: peachpuff;margin: 0px 0px;}
+.projects-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  /* background-color: peachpuff; */
+  gap: 4rem;
+  margin: 0px 0px;
+}
 
 .project-item {
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   /* margin: 0 5px; */
@@ -70,10 +95,12 @@ body {
 
 .project-image {
   flex: 5;
-  background-color: gray;
+  background-color: #4caf50;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 500px;
+  text-align: center;
 }
 
 .project-title {
@@ -81,16 +108,33 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 20px;
+  /* margin: 45px 0px; */
+  /* margin-top: 2rem; */
 }
 
-.icons {/* position: relative; */right: 7px;/* margin-left: 0px; *//* margin-right: 20px; *//* margin: 0 1rem; */margin-left: 12px;}
+.project-name {
+  font-weight: 500;
+  min-width: max-content;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  /* position: relative; */
+  right: 7px;
+  /* margin-left: 0px; */
+  /* margin-right: 20px; */
+  /* margin: 0 1rem; */
+  margin-left: 12px;
+}
 
 .project-description {
   flex: 1;
   font-size: 1.7rem;
   color: #615b5b;
-  margin: 0px 20px;
+  margin: 0 1rem;
+  margin-bottom: 6rem;
+  /* margin: 3rem 1rem; */
 }
 
 /* COLOR PALLETTE
