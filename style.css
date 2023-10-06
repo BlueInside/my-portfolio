@@ -60,6 +60,39 @@ body {
   cursor: pointer;
 }
 
+.projects-container {display: grid;grid-template-rows: 40rem;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));background-color: peachpuff;margin: 0px 0px;}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 5px; */
+}
+
+.project-image {
+  flex: 5;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.icons {/* position: relative; */right: 7px;/* margin-left: 0px; *//* margin-right: 20px; *//* margin: 0 1rem; */margin-left: 12px;}
+
+.project-description {
+  flex: 1;
+  font-size: 1.7rem;
+  color: #615b5b;
+  margin: 0px 20px;
+}
+
 /* COLOR PALLETTE
 Primary Color: #007BFF (Shades of blue often evoke trust and professionalism.)
 
