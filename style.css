@@ -91,13 +91,19 @@ body {
   background-image: url('./icons/github-original.svg');
 }
 
-.icon-small {
+.icon-small,
+.icon-medium {
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
   transition: transform 0.5s linear;
+}
+
+.icon-medium {
+  width: 4rem;
+  height: 4rem;
 }
 
 .icon-large {
@@ -107,7 +113,8 @@ body {
 }
 
 .icon-large:hover,
-.icon-small:hover {
+.icon-small:hover,
+.icon-medium:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -116,7 +123,10 @@ body {
   margin: 1.5rem;
 }
 
-.image-text {font-size: 2rem;font-weight: normal;}
+.image-text {
+  font-size: 2rem;
+  font-weight: normal;
+}
 
 .projects-container {
   display: grid;
@@ -179,6 +189,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #007bff;
+  padding: 0 1rem;
 }
 
 .contact-me {
@@ -193,6 +204,13 @@ body {
   font-weight: bold;
 }
 
+.get-in-touch {
+  font-weight: 600;
+}
+
+.address {
+  margin: 0px;
+}
 /* COLOR PALLETTE
 Primary Color: #007BFF (Shades of blue often evoke trust and professionalism.)
 
