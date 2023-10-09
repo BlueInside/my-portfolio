@@ -17,7 +17,7 @@ h6,
 p,
 ol,
 ul {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 ol,
@@ -26,8 +26,8 @@ ul {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  /* height: auto; */
 }
 body {
   font-family: 'Playfair Display', 'Roboto', serif;
@@ -35,7 +35,8 @@ body {
   margin: 0px;
 }
 
-.title {
+.title,
+.contact-me-title {
   text-align: center;
   font-size: 4rem;
   font-weight: 400;
@@ -90,7 +91,9 @@ body {
 .github-icon {
   background-image: url('./icons/github-original.svg');
 }
-
+.linkedin-icon {
+  background-image: url('./icons/linkedin-plain.svg');
+}
 .icon-small,
 .icon-medium {
   width: 40px;
@@ -196,20 +199,18 @@ body {
   color: white;
   font-size: 1.5rem;
 }
-
-.contact-me-title {
-  text-align: center;
-  font-size: 3rem;
-  /* font-weight: 700; */
-  font-weight: bold;
-}
+.contact-me-title {margin: 0px;}
 
 .get-in-touch {
-  font-weight: 600;
 }
 
 .address {
   margin: 0px;
+}
+
+.footer-image {
+  width: 100%;
+  object-fit: fill;
 }
 /* COLOR PALLETTE
 Primary Color: #007BFF (Shades of blue often evoke trust and professionalism.)
