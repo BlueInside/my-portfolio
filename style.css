@@ -20,7 +20,7 @@ h6,
 p,
 ol,
 ul {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 ol,
@@ -38,11 +38,11 @@ body {
 }
 
 .title,
+.project-name,
 .contact-me-title {
   text-align: center;
-  font-size: 4rem;
-  font-weight: 400;
-  /* margin-top: 6rem; */
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .profile-header {
@@ -76,7 +76,7 @@ body {
 .social-icons {
   display: flex;
   justify-content: space-around;
-  margin: 4rem 1rem;
+  margin: 1rem;
 }
 .view-in-new-icon {
   background-image: url('./icons/view-in-new.svg');
@@ -133,9 +133,6 @@ body {
 }
 
 .project-name {
-  /* margin-right: 10px; */
-  font-size: 1.9rem;
-  font-weight: 500;
   min-width: fit-content;
 }
 .project-item {
@@ -219,6 +216,9 @@ body {
   filter: brightness(0) invert(1);
 }
 @media (min-width: 500px) {
+  p {
+    font-size: 1.4rem;
+  }
   .header-wrapper {
     padding-top: 5px;
   }
@@ -230,21 +230,26 @@ body {
     z-index: 1;
   }
   .about-me {
-    /* font-weight: 400; */
     padding: 5vh;
     background-color: white;
     margin: 16vh 5vw;
     box-shadow: 7px 14px 50px #c2c2c2;
   }
-  .title {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 500;
-  }
+
   .fullname {
     left: 30vw;
     font-weight: 400;
     font-size: 3rem;
+  }
+  .footer-contact {
+    background-color: #007bff;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-image {
+    width: 40vw;
+    object-fit: contain;
+    margin-right: 4vw;
   }
 }
 
