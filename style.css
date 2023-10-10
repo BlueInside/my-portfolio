@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 *,
@@ -8,7 +9,9 @@ html {
   box-sizing: inherit;
   position: relative;
 }
-
+h1 {
+  font-size: 3.5rem;
+}
 h2,
 h3,
 h4,
@@ -30,7 +33,8 @@ img {
   /* height: auto; */
 }
 body {
-  font-family: 'Playfair Display', 'Roboto', serif;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-family: 'Playfair Display', serif;
   background: linear-gradient(160deg, #007bff 24%, white 0);
   margin: 0px;
 }
@@ -134,8 +138,7 @@ body {
 .projects-container {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  /* background-color: peachpuff; */
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 6rem;
   margin: 0px 0px;
 }
@@ -159,7 +162,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 500px;
+  min-height: 420px;
   text-align: center;
 }
 
@@ -198,8 +201,11 @@ body {
 .contact-me {
   color: white;
   font-size: 1.5rem;
+  font-family: 'Frank Ruhl Libre';
 }
-.contact-me-title {margin: 0px;}
+.contact-me-title {
+  margin: 0px;
+}
 
 .get-in-touch {
 }
@@ -212,18 +218,10 @@ body {
   width: 100%;
   object-fit: fill;
 }
-/* COLOR PALLETTE
-Primary Color: #007BFF (Shades of blue often evoke trust and professionalism.)
-
-Secondary Color: #FF6B6B (A vibrant red can add energy and contrast.)
-
-Accent Color: #4CAF50 (A fresh green can represent growth and positivity.)
-
-Background Color: #F5F5F5 (A light gray provides a clean and neutral backdrop.)
-
-Text Color: #333333 (A dark gray for text readability.)
-
-Highlight Color: #FFD700 (A warm yellow for highlighting important elements.)
-
-Call to Action Color: #FF5722 (An attention-grabbing orange for buttons and links.)
-*/
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+}
+/* COLOR PALLETTE Primary Color: #007BFF (shades of blue often evoke trust and professionalism.) Secondary Color: #FF6B6B (a vibrant red can add energy and contrast.) Accent Color: #4CAF50 (a fresh green can represent growth and positivity.) Background Color: #F5F5F5 (a light gray provides a clean and neutral backdrop.) Text Color: #333333 (a dark gray for text readability.) Highlight Color: #FFD700 (a warm yellow for highlighting important elements.) Call to Action Color: #FF5722 (an attention-grabbing orange for buttons and links.) */
