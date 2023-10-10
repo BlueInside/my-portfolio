@@ -20,7 +20,7 @@ h6,
 p,
 ol,
 ul {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 ol,
@@ -45,9 +45,6 @@ body {
   /* margin-top: 6rem; */
 }
 
-.name {
-  margin-left: -2rem;
-}
 .profile-header {
   background-image: url(./images/header.jpg);
   background-position: center;
@@ -194,6 +191,7 @@ body {
   color: white;
   font-size: 1.5rem;
   font-family: 'Frank Ruhl Libre';
+  gap: 1rem;
 }
 .contact-me-title {
   margin: 0px;
@@ -204,6 +202,9 @@ body {
 
 .address {
   margin: 0px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer-image {
@@ -213,6 +214,9 @@ body {
 .footer-contact {
   display: flex;
   flex-direction: column;
+}
+.white-icon {
+  filter: brightness(0) invert(1);
 }
 @media (min-width: 500px) {
   .header-wrapper {
