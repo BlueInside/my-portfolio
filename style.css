@@ -45,6 +45,10 @@ body {
   font-weight: 500;
 }
 
+.project-name {
+  font-size: 1.5rem;
+}
+
 .profile-header {
   background-image: url(./images/header.jpg);
   background-position: center;
@@ -148,7 +152,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 260px;
   text-align: center;
 }
 
@@ -215,6 +219,7 @@ body {
 .white-icon {
   filter: brightness(0) invert(1);
 }
+
 @media (min-width: 600px) {
   p {
     font-size: 1.4rem;
@@ -245,11 +250,63 @@ body {
     background-color: #007bff;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .footer-image {
     width: 40vw;
     object-fit: contain;
     margin-right: 4vw;
+  }
+
+  @media (max-width: 900px) and (orientation: landscape) {
+    .profile-header {
+      min-height: 400px;
+    }
+    .fullname {
+      left: 0;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    html {
+      font-size: 20px;
+    }
+    .title {
+      font-size: 3rem;
+    }
+    .fullname {
+      left: 0;
+    }
+    .profile-header {
+      align-items: flex-end;
+    }
+    .about-me {
+      margin: 4vh 5vw;
+    }
+    .social-icons {
+      gap: 5rem;
+      justify-content: flex-end;
+    }
+    .profile-header {
+      min-height: 700px;
+      min-width: 45%;
+    }
+    main {
+      margin: 10rem 0;
+    }
+    .projects-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-image {
+      max-width: 500px;
+    }
+    .content-container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .project-image {
+      min-height: 380px;
+    }
   }
 }
 
