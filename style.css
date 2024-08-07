@@ -146,7 +146,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.project-image {
+.project-image-landingPage {
   flex: 5;
   background-color: #4caf50;
   display: flex;
@@ -154,6 +154,9 @@ body {
   justify-content: center;
   min-height: 260px;
   text-align: center;
+  background-image: url('https://i.ibb.co/pRS2kkd/DALL-E-2024-08-07-14-15-12-A-dramatic-fantasy-scene-perfect-for-a-landing-page-featuring-a-warrior-i.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .project-title {
