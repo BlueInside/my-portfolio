@@ -320,7 +320,7 @@ body {
     justify-content: space-evenly;
   }
   .footer-image {
-    width: 40vw;
+    height: 40vh;
     object-fit: contain;
     margin-right: 4vw;
   }
