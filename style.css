@@ -66,9 +66,6 @@ body {
   margin: 1rem;
 }
 
-.about-me {
-}
-
 .description {
   font-weight: 400;
   font: 'Roboto';
@@ -128,6 +125,10 @@ body {
   font-weight: normal;
 }
 
+.project-text {
+  height: 300px;
+}
+
 .projects-container {
   display: grid;
   grid-template-rows: 1fr;
@@ -139,14 +140,14 @@ body {
 .project-name {
   min-width: fit-content;
 }
+
 .project-item {
   display: flex;
   flex-direction: column;
   box-shadow: 2px 4px 11px grey;
   margin-bottom: 2rem;
 }
-
-.project-image-landingPage {
+.project-image {
   flex: 5;
   background-color: #4caf50;
   display: flex;
@@ -154,9 +155,64 @@ body {
   justify-content: center;
   min-height: 260px;
   text-align: center;
-  background-image: url('https://i.ibb.co/pRS2kkd/DALL-E-2024-08-07-14-15-12-A-dramatic-fantasy-scene-perfect-for-a-landing-page-featuring-a-warrior-i.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+}
+
+.landingPage {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723046016/witcherLand_ezohro.webp');
+}
+
+.etchASketch {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723045881/etchSketch_dwot3b.webp');
+}
+
+.calculator {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723046109/calc_stpuie.webp');
+}
+
+.ticTacToe {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723053116/ticTacToe_jqsljx.webp');
+}
+
+.restaurant {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723053604/restaurant_ildxlw.webp');
+}
+
+.todo {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723053954/todo_k8l0bu.webp');
+}
+
+.weather {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723102347/weather_jp3wu3.webp');
+}
+
+.battleships {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723102687/battleship_haxrge.webp');
+}
+
+.cv {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723105372/cvApp_me7d84.webp');
+}
+
+.shop {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723105985/shoppingCart_gkcrfn.webp');
+}
+
+.blog {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723122968/blogpost_etiwuy.webp');
+}
+
+.chat {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723099225/chat_aq5k4g.jpg');
+}
+
+.waldo {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723099309/waldo_vtuifx.webp');
+}
+
+.facebook {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723099285/social_rgogev.jpg');
 }
 
 .project-title {
@@ -170,9 +226,6 @@ body {
 
 .icons {
   display: flex;
-  gap: 20px;
-  /* right: 7px; */
-  /* margin-left: 12px; */
 }
 
 .project-description {
@@ -223,9 +276,19 @@ body {
   filter: brightness(0) invert(1);
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
 @media (min-width: 600px) {
+  .footer-wrapper {
+    flex-direction: row;
+  }
+
   p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .header-wrapper {
     padding-top: 5px;
@@ -240,7 +303,8 @@ body {
   .about-me {
     padding: 5vh;
     background-color: white;
-    margin: 16vh 5vw;
+    margin: 6vh 2vw;
+    margin-top: 12vh;
     box-shadow: 7px 14px 50px #c2c2c2;
   }
 
@@ -283,12 +347,12 @@ body {
     .profile-header {
       align-items: flex-end;
     }
-    .about-me {
-      margin: 4vh 5vw;
-    }
     .social-icons {
       gap: 5rem;
       justify-content: flex-end;
+    }
+    .project-text {
+      height: 420px;
     }
     .profile-header {
       min-height: 700px;
@@ -297,6 +361,7 @@ body {
     main {
       margin: 10rem 0;
     }
+
     .projects-container {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -304,11 +369,11 @@ body {
       max-width: 500px;
     }
     .content-container {
-      max-width: 1600px;
+      max-width: 1200px;
       margin: 0 auto;
     }
     .project-image {
-      min-height: 380px;
+      min-height: 300px;
     }
   }
 }
