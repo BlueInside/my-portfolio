@@ -215,6 +215,9 @@ body {
   background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723099285/social_rgogev.jpg');
 }
 
+.memory {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723143067/memory_zigudf.webp');
+}
 .project-title {
   flex: 1;
   display: flex;
