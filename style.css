@@ -218,6 +218,11 @@ body {
 .memory {
   background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1723143067/memory_zigudf.webp');
 }
+
+.fileUploader {
+  background-image: url('https://res.cloudinary.com/dhjzutfu9/image/upload/v1730567030/DALL_E_2024-11-02_16.59.03_-_A_user_interface_mockup_for_a_file_uploader_web_application._The_design_has_a_clean_modern_layout_with_a_prominent_navbar_at_the_top_that_includes_bu_dsazf9.webp');
+}
+
 .project-title {
   flex: 1;
   display: flex;
